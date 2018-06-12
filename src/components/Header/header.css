@@ -1,0 +1,24 @@
+.header {
+  background-color: #fff;
+  padding: 10px 50px;
+}
+
+.headerOpt {
+  display: flex;
+  width: 100%;
+}
+
+.header a {
+  flex-grow: .98;
+  text-align: center;
+}
+
+.logo {
+  color: #565a6a;
+  font-size: 25px;
+}
+
+.header svg {
+  font-size: 25px;
+}
+

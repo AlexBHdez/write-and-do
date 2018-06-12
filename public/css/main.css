@@ -1,0 +1,12 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Francois One', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

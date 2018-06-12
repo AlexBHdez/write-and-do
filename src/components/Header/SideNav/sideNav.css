@@ -1,0 +1,31 @@
+.option {
+  height: 200px;
+  padding: 50px;
+  border-bottom: 1px solid rgba(86, 90, 106, .05);
+}
+
+.option:hover {
+  background-color: #6ed3c9;
+}
+
+.option:hover svg, .option:hover p {
+  color: #fff;
+}
+
+.option svg {
+  font-size: 50px;
+  color: #c8cac9;
+}
+
+.option a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.option p {
+  font-size: 14px;
+  color: #c8cac9;
+}
