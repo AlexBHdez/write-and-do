@@ -33,9 +33,9 @@ const Header = (props) => {
 
   return(
     <header className={styles.header}>
-      < SideNav {...props} />
+      {/* < SideNav {...props} /> */}
       <div className={styles.headerOpt}>
-        { navBars() }
+        {/* { navBars() } */}
         { logo() }
       </div>
     </header>

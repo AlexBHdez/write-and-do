@@ -9,16 +9,7 @@ class Home extends Component {
 
   state = {
     inputValue: '',
-    tasks: [
-      {
-        value: 'first task',
-        done: true,
-      },
-      {
-        value: 'second task',
-        done: false,
-      },
-    ]
+    tasks: [],
   }
   
   handleChangeInput = (input) => {
