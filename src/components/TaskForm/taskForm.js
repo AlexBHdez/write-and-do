@@ -2,27 +2,23 @@ import React from 'react';
 // Styles
 import styles from './taskForm.css';
 
-const TaskForm = ({addTask}) => {
-  let input;
-
+const TaskForm = (props) => {
+  
   return(
-    <div className={styles.taskWrapper}>
-      <input
-        className={styles.taskInput}
-        ref={ node => {
-          input = node;
-        }}
-      />
-      <button
-        className={styles.addTask}
-        onClick={ () => {
-          addTask(input.value);
-          input.value = '';
-        }}
+      <form className={styles.taskWrapper}
+        onSubmit={ (event) => props.handleSubmit(event) }
       >
-        Add task
-      </button>
-    </div>
+        <input
+          className={styles.taskInput}
+          value={props.inputValue}
+          onChange={ (event) => props.handleChangeInput(event.target.value) }
+        />
+        <button
+          className={styles.addTask}
+        >
+          Add task
+        </button>
+      </form>
   )
 }
 
