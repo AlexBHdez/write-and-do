@@ -9,13 +9,13 @@ const Task = (props) => {
       <button
           onClick={ () => props.handleDone(props.index) }
         >
-          Completed
+          Undo
       </button>
       :
       <button
           onClick={ () => props.handleDone(props.index) }
         >
-          Undo
+          Completed
       </button>
   }
 
